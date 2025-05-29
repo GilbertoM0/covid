@@ -1,0 +1,9 @@
+# Archivo 1
+flask
+tensorflow
+numpy
+Pillow
+python-multipart
+
+# pip install -r .\requirements.txt
+

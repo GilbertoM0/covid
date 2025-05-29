@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detector COVID-19</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Clasificador de Radiografías</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Clasificar</button>
+    </form>
+
+    {% if result %}
+        <h2>Resultado: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
